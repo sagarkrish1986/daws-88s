@@ -1,0 +1,36 @@
+# This is a comment
+app_name: SampleApp
+enabled: true
+max_users: 100
+
+# Nested dictionary (Map)
+database:
+  host: localhost
+  port: 5432
+  credentials:
+    username: admin
+    password: secret_password
+
+# List/Array
+servers:
+  - web01
+  - web02
+  - web03
+
+# List of Dictionaries
+endpoints:
+  - name: API
+    url: /api/v1
+  - name: Dashboard
+    url: /dashboard
+
+# Multi-line string (folded)
+description: >
+  This is a long description
+  that will be folded into a
+  single line.
+
+# Multi-line string (literal)
+script: |
+  #!/bin/bash
+  echo "Hello World"
